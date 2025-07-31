@@ -153,8 +153,7 @@ export default function LandingPage() {
         throw new Error(result.error || "Failed to save your information")
       }
 
-      // If successful, show success message
-      alert("Demo email sent! Your information has been saved. Check your inbox in the next few minutes.")
+      // If successful, close onboarding
       setShowOnboarding(false) // Close onboarding
     } catch (error) {
       console.error("Error submitting form:", error)

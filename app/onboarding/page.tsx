@@ -121,7 +121,6 @@ export default function OnboardingPage() {
         throw new Error(result.error || "Failed to save your information")
       }
 
-      alert("Demo email sent! Your information has been saved. Check your inbox in the next hour.")
       window.location.href = "/"
     } catch (error) {
       console.error("Error submitting form:", error)
